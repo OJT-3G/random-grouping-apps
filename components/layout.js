@@ -4,8 +4,8 @@ import styles from './layout.module.css';
 import utilStyles from '../styles/utils.module.css';
 import Link from 'next/link';
 
-const name = '西川 翼';
-export const siteTitle = 'Next.js Sample Website';
+const name = 'ランダムグループ分けアプリ';
+export const siteTitle = 'random-grouping-apps';
 
 export default function Layout({ children, home }) {
   return (
@@ -29,10 +29,7 @@ export default function Layout({ children, home }) {
         {home ? (
           <>
             <Image
-              priority
-              src="/images/profile.jpg"
               className={utilStyles.borderCircle}
-              height={144}
               width={144}
               alt=""
             />
